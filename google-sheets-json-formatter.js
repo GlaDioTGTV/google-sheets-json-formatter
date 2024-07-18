@@ -3,7 +3,7 @@ function onOpen() {
   ui.createMenu('JSON Formatter')
       .addItem('Format JSON In Place', 'formatJSONInPlace')
       .addItem('Parse Formatted JSON to Columns', 'parseFormattedJSONToColumns')
-      .addSeparatora()
+      .addSeparator()
       .addItem('Revert to JSON', 'revertToJSON')
       .addSeparator()
       .addItem('Help', 'showHelp')
