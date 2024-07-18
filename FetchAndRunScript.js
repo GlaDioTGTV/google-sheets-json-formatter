@@ -1,7 +1,10 @@
 function fetchAndRunScript() {
-    var url = 'https://raw.githubusercontent.com/GlaDioTGTV/google-sheets-json-formatter/main/google-sheets-json-formatter.js'; // Raw URL of your GitHub script
+    var url = 'https://raw.githubusercontent.com/GlaDioTGTV/google-sheets-json-formatter/main/google-sheets-json-formatter.js';
     var response = UrlFetchApp.fetch(url);
     var code = response.getContentText();
+    
+    // Log the fetched code to ensure it's being fetched correctly
+    Logger.log(code);
     
     // Execute the fetched code
     eval(code);
