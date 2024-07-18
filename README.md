@@ -6,6 +6,7 @@ Google Sheets JSON Formatter is a Google Apps Script that adds a custom menu to 
 
 - **Format JSON In Place**: Convert JSON strings into readable "key: value" pairs within the selected range.
 - **Parse Formatted JSON to Columns**: Extract keys from formatted JSON and arrange the data into new columns, preserving the original format.
+- **Revert to JSON**: Convert formatted "key: value" pairs back to JSON strings.
 
 ## How to Use
 
@@ -46,12 +47,16 @@ The parser is used to extract keys from formatted JSON strings and arrange the d
 2. Select the cell with the formatted JSON data.
 3. From the `JSON Formatter` menu, choose `Parse Formatted JSON to Columns`. The data will be extracted and arranged into new columns, starting from the first empty column to the right of the selected cell.
 
-## Installation
-
-1. Open your Google Sheets document.
-2. Navigate to `Extensions > Apps Script`.
-3. Delete any default code in the script editor and paste in the provided code from `google-sheets-json-formatter.js`.
-4. Save the project with an appropriate name.
+#### Reverting to JSON
+The reverter is used to convert formatted "key: value" pairs back to JSON strings:
+1. Ensure your data is formatted in place as "key: value" pairs within the cell:
+   ```plaintext
+   name: Sarah, age: 30, city: Tunis
+   ```
+2. Select the cell with the formatted data.
+3. From the JSON Formatter menu, choose Revert to JSON. The formatted data will be converted back to a JSON string:
+```json
+   {"name":"Sarah","age":30,"city":"Tunis"}
 
 ## Contribution
 
