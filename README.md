@@ -12,7 +12,7 @@ Google Sheets JSON Formatter is a Google Apps Script that adds a custom menu to 
 
 1. Open your Google Sheets document.
 2. Go to `Extensions > Apps Script`.
-3. Delete any default code in the script editor and paste the provided code from `Code.js`.
+3. Delete any default code in the script editor and paste the provided code from `Update google-sheets-json-formatter.js`.
 4. Save the script and reload the Google Sheet.
 5. Use the `JSON Formatter` menu in the Google Sheets UI.
 
